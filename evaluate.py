@@ -100,7 +100,7 @@ def evaluate_samples(generated_samples, set_name='test2'):
     feature_metrics = []
     
     n_features = test2_original.shape[1]
-    for i in range(min(10, n_features)):  # Show first 10 features
+    for i in range(n_features):  # Show first 10 features
         feature_missing = test2_mask[:, i]
         if feature_missing.sum() == 0:
             continue
