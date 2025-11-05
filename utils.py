@@ -195,7 +195,7 @@ def plot_distribution_comparison(last_4_features, feature_metrics, test_imputati
 
     # Additional statistical comparison table
     print(f"\nDetailed Statistical Comparison:")
-    print(f"{'Feature':<15} {'GT Mean':<10} {'Imp Mean':<10} {'GT Std':<10} {'Imp Std':<10} {'Mean Diff':<10} {'Corr':<8}")
+    print(f"{'Feature':<15} {'Dataset Mean':<10} {'Imp Mean':<10} {'Dataset Std':<10} {'Imp Std':<10} {'Mean Diff':<10} {'Corr':<8}")
     print("-" * 85)
 
     for feature_name in last_4_features:
